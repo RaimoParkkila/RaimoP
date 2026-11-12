@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raimo Parkkila - Software development, ERP systems, React, Unity and original music.">
+    <meta name="author" content="Raimo Parkkila">
+    <meta property="og:title" content="Raimo P | Software & Creative Technology">
+    <meta property="og:description" content="Software development, ERP systems, music and creative technology.">
+    <meta property="og:type" content="website">
+
+    <title>Raimo P | Software & Creative Technology</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #10141c;
+            color: #e8edf5;
+            line-height: 1.7;
+        }
+
+        a {
+            color: #63b3ed;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #90cdf4;
+        }
+
+        header {
+            padding: 75px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #172638, #10141c);
+            border-bottom: 1px solid #29384a;
+        }
+
+        header h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            letter-spacing: 2px;
+        }
+
+        header p {
+            color: #a9b9ca;
+            margin-top: 12px;
+            font-size: 1.1rem;
+        }
+
+        nav {
+            padding: 18px;
+            text-align: center;
+            background: #151d28;
+            border-bottom: 1px solid #29384a;
+        }
+
+        nav a {
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        main {
+            max-width: 1050px;
+            margin: auto;
+            padding: 45px 22px;
+        }
+
+        section {
+            margin-bottom: 55px;
+        }
+
+        h2 {
+            color: #63b3ed;
+            margin-bottom: 20px;
+            font-size: 1.7rem;
+        }
+
+        .intro {
+            font-size: 1.15rem;
+            color: #c4cfdd;
+            max-width: 800px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background: #192330;
+            border: 1px solid #29384a;
+            border-radius: 10px;
+            padding: 24px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .project:hover {
+            transform: translateY(-4px);
+            border-color: #63b3ed;
+        }
+
+        .project h3 {
+            margin-bottom: 10px;
+            color: #e8edf5;
+        }
+
+        .project p {
+            color: #a9b9ca;
+            margin-bottom: 14px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+        }
+
+        .tags span {
+            background: #26384b;
+            color: #90cdf4;
+            padding: 4px 11px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 15px;
+            color: #8292a5;
+            border-top: 1px solid #29384a;
+            background: #151d28;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>RAIMO P</h1>
+    <p>Software Development · ERP · Creative Technology · Music</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#technology">Technology</a>
+    <a href="#music">Music</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+    <section id="about">
+        <h2>About</h2>
+        <p class="intro">
+            Software developer with over 25 years of experience in
+            programming, databases, backend systems and software development.
+            Interested in building practical business applications,
+            ERP solutions and creative technology projects.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="projects">
+
+            <article class="project">
+                <h3>RPA SHOP</h3>
+                <p>
+                    ERP application development focused on business
+                    processes, data management and application architecture.
+                </p>
+                <div class="tags">
+                    <span>ERP</span>
+                    <span>React</span>
+                    <span>Database</span>
+                </div>
+            </article>
+
+            <article class="project">
+                <h3>Unity Development</h3>
+                <p>
+                    Interactive 3D environments, game development,
+                    lighting, sound and creative technical experiments.
+                </p>
+                <div class="tags">
+                    <span>Unity</span>
+                    <span>C#</span>
+                    <span>3D</span>
+                </div>
+            </article>
+
+            <article class="project">
+                <h3>Backend & Integrations</h3>
+                <p>
+                    Backend development, database systems,
+                    data processing and integrations.
+                </p>
+                <div class="tags">
+                    <span>Perl</span>
+                    <span>PHP</span>
+                    <span>SQL</span>
+                    <span>Python</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="technology">
+        <h2>Technology</h2>
+        <div class="tags">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>JavaScript</span>
+            <span>PHP</span>
+            <span>Laravel</span>
+            <span>Perl</span>
+            <span>SQL</span>
+            <span>MariaDB</span>
+            <span>MarkLogic</span>
+            <span>Python</span>
+            <span>C#</span>
+            <span>Unity</span>
+        </div>
+    </section>
+
+    <section id="music">
+        <h2>Music & Creative Work</h2>
+        <p class="intro">
+            Original music, guitar-based compositions, sound design
+            and creative experiments combining traditional
+            musicianship with modern technology.
+        </p>
+        <p style="margin-top: 15px;">
+            <a href="https://suno.com/@raimopa2" target="_blank"
+               rel="noopener noreferrer">Explore my music on Suno →</a>
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Links</h2>
+        <div class="links">
+            <a href="https://github.com/RaimoParkkila">
+                GitHub →
+            </a>
+            <a href="https://www.linkedin.com/in/me/">
+                LinkedIn →
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 Raimo P · Software & Creative Technology
+</footer>
+
+</body>
+</html>
