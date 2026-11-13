@@ -53,16 +53,45 @@
             font-size: 1.1rem;
         }
 
+        /* Main navigation */
         nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 12px 20px;
             padding: 18px;
             text-align: center;
             background: #151d28;
             border-bottom: 1px solid #29384a;
         }
 
-        nav a {
-            margin: 0 15px;
+        nav > a {
+            margin: 0;
             font-weight: 600;
+        }
+
+        /* Music category navigation */
+        .music-submenu {
+            flex-basis: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px 24px;
+            padding-top: 12px;
+            margin-top: 5px;
+            border-top: 1px solid #29384a;
+        }
+
+        .music-submenu a {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #90aeca;
+        }
+
+        .music-submenu a:hover {
+            color: #63b3ed;
         }
 
         main {
@@ -143,6 +172,22 @@
             border-top: 1px solid #29384a;
             background: #151d28;
         }
+
+        /* Mobile navigation */
+        @media (max-width: 600px) {
+            nav {
+                gap: 12px 16px;
+                padding: 16px 12px;
+            }
+
+            .music-submenu {
+                gap: 8px 16px;
+            }
+
+            .music-submenu a {
+                font-size: 0.85rem;
+            }
+        }
     </style>
 </head>
 
@@ -153,7 +198,6 @@
     <p>Software Development · ERP · Creative Technology · Music</p>
 </header>
 
-    
 <nav>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
@@ -161,7 +205,7 @@
     <a href="#music">Music</a>
 
     <div class="music-submenu">
-      <a href="acoustic-world-fusion.html">Acoustic World Fusion</a>
+        <a href="acoustic-world-fusion.html">Acoustic World Fusion</a>
         <a href="highway-night-drive.html">Highway & Night Drive</a>
         <a href="rock-hard-rock.html">Rock & Hard Rock</a>
         <a href="electronic-hardrave.html">Electronic & HardRave</a>
@@ -171,40 +215,6 @@
 
     <a href="#contact">Contact</a>
 </nav>
-
-    nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 12px 20px;
-    padding: 18px;
-    text-align: center;
-    background: #151d28;
-    border-bottom: 1px solid #29384a;
-}
-
-nav a {
-    margin: 0;
-    font-weight: 600;
-}
-
-.music-submenu {
-    flex-basis: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px 24px;
-    padding-top: 10px;
-    border-top: 1px solid #29384a;
-}
-
-.music-submenu a {
-    font-size: 0.9rem;
-    color: #90aeca;
-}
-
-<main>
 
 <main>
 
